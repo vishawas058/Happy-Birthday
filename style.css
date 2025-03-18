@@ -1,0 +1,193 @@
+/* Existing styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive; /* Changed font-family to cursive */
+  }
+  body {
+    /* background-color: #c93264; */
+    background: url('https://www.dropbox.com/scl/fi/ftmdvpp6sf37yl0ugx5x3/party-floor-and-lights-background-0ogmqng7vup8k3q2.jpg?rlkey=lc7m73cyphvsah3n49wuhm1e2&st=bolptw4l&raw=1')
+  }
+  .card {
+    width: 700px;
+    height: 450px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    transition: 1s;
+  }
+  .card:hover {
+    transform: rotate(-5deg);
+  }
+  .card:hover .outside {
+    transform: rotateY(-130deg);
+  }
+  .outside,
+  .inside {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50.1%;
+  }
+  .inside {
+    background: url('https://www.dropbox.com/scl/fi/zh05n55ee1fmza968swor/pngtree-birthday-party-invitation-card-warm-and-romantic-child-birthday-picture-image_968477.jpg?rlkey=vvwkr5i75wuo8reo0x9vrbgrv&st=75rk4n02&raw=1') no-repeat center center;
+    background-size: cover;
+    line-height: 1;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    font-size: large;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+  }
+  .foto {
+    width: 300px; /* Increased width */
+    height: 300px; /* Increased height */
+    border-radius: 20px; /* Changed shape */
+    border: 5px solid #FF69B4; /* Added border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+    padding: 5px; /* Added padding */
+  }
+  .outside {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+    cursor: pointer;
+  }
+  .button {
+    background-color: #FF69B4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size */
+  }
+  .front,
+  .back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+  }
+  .front {
+    background: url('https://www.dropbox.com/scl/fi/zh05n55ee1fmza968swor/pngtree-birthday-party-invitation-card-warm-and-romantic-child-birthday-picture-image_968477.jpg?rlkey=vvwkr5i75wuo8reo0x9vrbgrv&st=75rk4n02&raw=1') no-repeat center center;
+    background-size: cover;
+  }
+  .back {
+    transform: rotateY(180deg);
+    background: url('https://www.dropbox.com/scl/fi/zh05n55ee1fmza968swor/pngtree-birthday-party-invitation-card-warm-and-romantic-child-birthday-picture-image_968477.jpg?rlkey=vvwkr5i75wuo8reo0x9vrbgrv&st=75rk4n02&raw=1') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+  }
+  .cake {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+  }
+  .top-layer,
+  .middle-layer,
+  .bottom-layer {
+    height: 80px;
+    width: 240px;
+    background-repeat: repeat;
+    background-size: 60px 100px;
+    background-position: 28px 0;
+    background-image: linear-gradient(
+        transparent 50px,
+        #fedbab 50px,
+        #fedbab 60px,
+        transparent 60px
+      ),
+      radial-gradient(circle at 30px 5px, #994c10 30px, #fcbf29 31px);
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    margin: auto;
+  }
+  .middle-layer {
+    transform: scale(0.85);
+    top: 6px;
+  }
+  .top-layer {
+    transform: scale(0.7);
+    top: 26px;
+  }
+  .candle {
+    height: 45px;
+    width: 15px;
+    background: repeating-linear-gradient(
+      45deg,
+      #fd3018 0,
+      #fd3018 5px,
+      #ffa89e 5px,
+      #ffa89e 10px
+    );
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 202px;
+  }
+  /* .candle:before {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 48px;
+    transform: rotate(45deg);
+    left: -1px;
+  } */
+
+  /* Burning flame animation */
+  .candle:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 25px;
+    background: radial-gradient(circle, rgb(238, 255, 0) 0%, #ff8c00 50%, #ff4500 100%);
+    border-radius: 50%;
+    top: -25px;
+    left: 1.1px;
+    animation: flicker 0.2s infinite alternate;
+  }
+
+  @keyframes flicker {
+    0% {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.2) translateY(-2px);
+      opacity: 0.8;
+    }
+  }
+
+  .outside p {
+    font-size: 23px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 6px;
+    font-weight: bold;
+    color: #000046;
+  }
+  .inside h1 {
+    font-size: 120px;
+    line-height: 120px;
+
+      }
