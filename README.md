@@ -9,40 +9,40 @@ A simple, heartfelt birthday card webpage featuring a personalized message, a cu
 This webpage displays a centered birthday card with a background image, a cute avatar, a heartfelt message, and a button to play a song. When the page loads, confetti bursts across the screen to create a festive atmosphere.
 ## How to Run
 1. **Clone the Repository:**
-bash
+```bash
 git clone <repository-url>
-Navigate to the Project Directory:
-bash
+
+```
+2. Navigate to the Project Directory:
+```bash
 cd birthday-card
-Open the index.html File:
-You can open the index.html file directly in a web browser by double-clicking it, or
-Use a local server (e.g., with VS Code's Live Server extension or by running a simple server):
-bash
+```
+3. Open the index.html File:
+- You can open the index.html file directly in a web browser by double-clicking it, or
+- Use a local server (e.g., with VS Code's Live Server extension or by running a simple server):
+```bash
 python -m http.server 8000
-Then, navigate to http://localhost:8000 in your browser.
-Run the Project Online
+```
+  Then, navigate to http://localhost:8000 in your browser.
+## Run the Project Online
 Click the link below to see the birthday card in action:
 🎂 Run the Birthday Card (insert-live-url-here)
-Note: Replace <insert-live-url-here> with the actual URL where the project is hosted (e.g., GitHub Pages, Replit, Netlify, etc.).
-Project Structure
-index.html: The main HTML file containing the structure of the birthday card.
-styles.css: The CSS file for styling the card, including responsive design and animations.
-script.js: The JavaScript file that handles the confetti animation and song playback.
-Dependencies
-Google Fonts: Used for custom typography (Lobster and Playwrite fonts).
-External Image: A cute avatar image hosted on Dropbox (you can replace this with your own image).
-Customization
-Change the Message: Edit the <p> tag in the index.html file to personalize the birthday message.
-Update the Avatar: Replace the src attribute of the <img> tag with a different image URL.
-Modify Styles: Adjust the styles.css file to change colors, fonts, or layout.
-Song Playback: Update the src attribute of the <audio> tag in index.html to use a different song.
-Credits
-Fonts: Google Fonts (Lobster and Playwrite).
-Confetti Animation: Custom JavaScript implementation inspired by common confetti effects.
-Avatar Image: Sourced from Dropbox (replace with your own image as needed).
-License
+
+## Project Structure
+- `index.html`: The main HTML file containing the structure of the birthday card.
+- `styles.css`: The CSS file for styling the card, including responsive design and animations.
+- `script.js`: The JavaScript file that handles the confetti animation and song playback.
+## Dependencies
+- **Google Fonts:** Used for custom typography (Lobster and Playwrite fonts).
+- **External Image:** A cute avatar image hosted on Dropbox (you can replace this with your own image).
+## Customization
+- **Change the Message:** Edit the `<p>` tag in the `index.html` file to personalize the birthday message.
+- **Update the Avatar:** Replace the `src` attribute of the `<img>` tag with a different image URL.
+- **Modify Styles:** Adjust the `styles.css` file to change colors, fonts, or layout.
+- **Song Playback:** Update the `src` attribute of the `<audio>` tag in `index.html` to use a different song.
+## Credits
+- **Fonts:** Google Fonts (Lobster and Playwrite).
+- **Confetti Animation:** Custom JavaScript implementation inspired by common confetti effects.
+- **Avatar Image:** Sourced from Dropbox (replace with your own image as needed).
+## License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it as you wish!
-Notes for You
-The README.md assumes the project is split into separate index.html, styles.css, and script.js files, which is a common practice. However, in the screenshot, the CSS and JavaScript are embedded in the HTML file. If you prefer to keep it that way, you can adjust the "Project Structure" section to reflect that.
-The "Run the Project Online" link is a placeholder. If you host the project on a platform like GitHub Pages, Netlify, or Replit, you can replace <insert-live-url-here> with the actual URL.
-If you need help hosting the project to generate a live link, let me know, and I can guide you through the process!
