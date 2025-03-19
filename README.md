@@ -42,7 +42,7 @@ Click the link below to see the birthday card in action:
 - **Song Playback:** Update the `src` attribute of the `<audio>` tag in `index.html` to use a different song.
 ## Creator Details
 This project was created by:
-- Name: [Vishawas]
+- Name: Vishawas
 - GitHub: [vishawas058](https://github.com/vishawas058)
 - Email: [vishawas](mangadivine.in@gmail.com)
 - X: [vishawas_058](https://x.com/vishawas_058)
