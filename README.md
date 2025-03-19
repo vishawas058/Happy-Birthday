@@ -17,16 +17,16 @@ git clone <repository-url>
 ```bash
 cd birthday-card
 ```
-3. Open the index.html File:
-- You can open the index.html file directly in a web browser by double-clicking it, or
+3. Open the `index.html` File:
+- You can open the `index.html` file directly in a web browser by double-clicking it, or
 - Use a local server (e.g., with VS Code's Live Server extension or by running a simple server):
 ```bash
 python -m http.server 8000
 ```
-  Then, navigate to http://localhost:8000 in your browser.
+  Then, navigate to `http://localhost:8000` in your browser.
 ## Run the Project Online
 Click the link below to see the birthday card in action:
-🎂 Run the Birthday Card (insert-live-url-here)
+🎂 [Run the Birthday Card]()
 
 ## Project Structure
 - `index.html`: The main HTML file containing the structure of the birthday card.
@@ -40,6 +40,15 @@ Click the link below to see the birthday card in action:
 - **Update the Avatar:** Replace the `src` attribute of the `<img>` tag with a different image URL.
 - **Modify Styles:** Adjust the `styles.css` file to change colors, fonts, or layout.
 - **Song Playback:** Update the `src` attribute of the `<audio>` tag in `index.html` to use a different song.
+## Creator Details
+This project was created by:
+- Name: [Vishawas]
+- GitHub: [vishawas058]((https://github.com/vishawas058))
+- Email: [vishawas](mangadivine.in@gmail.com)
+- X: [vishawas_058](https://x.com/vishawas_058)
+- About: A passionate developer who loves creating fun and meaningful projects to bring joy to others. Feel free to reach out for collaboration or feedback!
+
+
 ## Credits
 - **Fonts:** Google Fonts (Lobster and Playwrite).
 - **Confetti Animation:** Custom JavaScript implementation inspired by common confetti effects.
