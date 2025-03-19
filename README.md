@@ -1,7 +1,7 @@
-## Birthday Card Webpage 🎉
+# Birthday Card Webpage 🎉
 A simple, heartfelt birthday card webpage featuring a personalized message, a cute avatar, and a confetti animation to celebrate a special day! This project uses HTML, CSS, and JavaScript to create a visually appealing and interactive experience.
-Features
-Personalized Message: A sweet birthday message for the recipient.
+## Features
+ - **Personalized Message:** A sweet birthday message for the recipient.
 Confetti Animation: A fun confetti effect to add a celebratory vibe.
 Responsive Design: The card is styled to look great on both desktop and mobile devices.
 Customizable: Easily modify the message, avatar, and styles to suit your needs.
