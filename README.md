@@ -26,7 +26,7 @@ python -m http.server 8000
   Then, navigate to `http://localhost:8000` in your browser.
 ## Run the Project Online
 Click the link below to see the birthday card in action:
-🎂 [Run the Birthday Card]()
+🎂 [Run the Birthday Card](https://vishawas058.github.io/Happy-Birthday/)
 
 ## Project Structure
 - `index.html`: The main HTML file containing the structure of the birthday card.
