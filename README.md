@@ -10,12 +10,12 @@ This webpage displays a centered birthday card with a background image, a cute a
 ## How to Run
 1. **Clone the Repository:**
 ```bash
-git clone <repository-url>
+git clone [](https://github.com/vishawas058/Happy-Birthday.git)
 
 ```
 2. Navigate to the Project Directory:
 ```bash
-cd birthday-card
+cd Happy-Birthday
 ```
 3. Open the `index.html` File:
 - You can open the `index.html` file directly in a web browser by double-clicking it, or
