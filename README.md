@@ -43,7 +43,7 @@ Click the link below to see the birthday card in action:
 ## Creator Details
 This project was created by:
 - Name: [Vishawas]
-- GitHub: [vishawas058]((https://github.com/vishawas058))
+- GitHub: [vishawas058](https://github.com/vishawas058)
 - Email: [vishawas](mangadivine.in@gmail.com)
 - X: [vishawas_058](https://x.com/vishawas_058)
 - About: A passionate developer who loves creating fun and meaningful projects to bring joy to others. Feel free to reach out for collaboration or feedback!
