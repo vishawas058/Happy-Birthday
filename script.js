@@ -1,9 +1,28 @@
-function playSong() {
-    var audio = new Audio('https://www.dropbox.com/scl/fi/58gpkuu8irbi1otjpmmjz/Laddo-Rani-Song.mp3?rlkey=qssac41u5nmgq8jpkdpbt23lw&st=469lixqa&raw=1');
-    audio.play().catch(function(error) {
-        console.log('Playback failed:', error);
-    });
+var audio; // Declare audio variable globally
+
+function playSong(button) {
+    if (!audio || audio.paused) {
+        audio = new Audio('https://www.dropbox.com/scl/fi/58gpkuu8irbi1otjpmmjz/Laddo-Rani-Song.mp3?rlkey=qssac41u5nmgq8jpkdpbt23lw&st=i9wrwgj4&raw=1');
+        button.disabled = true; // Disable the button
+        audio.play().catch(function(error) {
+            console.log('Playback failed:', error);
+            button.disabled = false; // Re-enable button on playback failure
+        });
+
+        // Event listener for when the audio ends
+        audio.addEventListener('ended', function() {
+            button.disabled = false; // Re-enable the button when audio ends
+            button.textContent = 'Play Song'; // Change button text to "Replay Audio"
+        });
+    }
 }
+
+// Example button element for Play
+var playButton = document.getElementById('playButton');
+playButton.addEventListener('click', function() {
+    playSong(this);
+});
+
 var maxParticleCount = 150; //set max confetti count
 
 var particleSpeed = 2; //set the particle animation speed
