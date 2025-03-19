@@ -10,7 +10,7 @@ This webpage displays a centered birthday card with a background image, a cute a
 ## How to Run
 1. **Clone the Repository:**
 ```bash
-git clone [](https://github.com/vishawas058/Happy-Birthday.git)
+git clone https://github.com/vishawas058/Happy-Birthday.git
 
 ```
 2. Navigate to the Project Directory:
